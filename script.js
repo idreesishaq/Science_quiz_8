@@ -11,7 +11,7 @@ let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
-let timeLeft = 20;
+let timeLeft = 45;
 
 let quizReport = [];
 
@@ -126,7 +126,7 @@ function resetState(){
 
 clearInterval(timer);
 
-timeLeft = 20;
+timeLeft = 45;
 
 timerElement.innerText = timeLeft;
 
