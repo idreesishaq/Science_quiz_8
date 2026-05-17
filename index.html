@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQs Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="home-screen">
+      <h1>Science Quiz Application</h1>
+
+      <div class="btn-group">
+        <button onclick="startQuiz('chapter5')">Chapter 5</button>
+        <button onclick="startQuiz('chapter6')">Chapter 6</button>
+        <button onclick="startQuiz('chapter7')">Chapter 7</button>
+        <button onclick="startQuiz('chapter8')">Chapter 8</button>
+        <button onclick="startQuiz('all')">All Chapters</button>
+      </div>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+
+      <div class="top-bar">
+        <div id="question-count"></div>
+        <div id="timer">20</div>
+      </div>
+
+      <h2 id="question"></h2>
+
+      <div id="options"></div>
+
+      <button id="next-btn">Next Question</button>
+
+    </div>
+
+    <!--<div id="result-screen" class="hidden">
+    <h1>Quiz Completed!</h1>
+
+    <div class="result-box">
+      <p>Total Questions: <span id="total-questions"></span></p>
+      <p>Correct Answers: <span id="correct-answers"></span></p>
+      <p>Wrong Answers: <span id="wrong-answers"></span></p>
+      <p>Score: <span id="score"></span></p>
+      <p>Percentage: <span id="percentage"></span>%</p>
+    </div>
+
+    <button onclick="goHome()">Back To Home</button>
+  </div>-->
+    <div id="result-screen" class="hidden">
+
+      <h1>Quiz Completed!</h1>
+
+      <div class="result-box">
+
+        <p>Total Questions:
+          <span id="total-questions"></span>
+        </p>
+
+        <p>Correct Answers:
+          <span id="correct-answers"></span>
+        </p>
+
+        <p>Wrong Answers:
+          <span id="wrong-answers"></span>
+        </p>
+
+        <p>Score:
+          <span id="score"></span>
+        </p>
+
+        <p>Percentage:
+          <span id="percentage"></span>%
+        </p>
+
+      </div>
+
+      <div id="report-table"></div>
+
+      <br>
+
+      <button onclick="downloadPDF()">
+        Download PDF Report
+      </button>
+
+      <button onclick="goHome()">
+        Back To Home
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
